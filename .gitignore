@@ -1,0 +1,60 @@
+# Environment files & Secrets
+.env
+*.env
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+backend/.venv/
+.venv/
+env/
+venv/
+ENV/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Databases & Local Data
+backend/dev.db
+backend/dev.db.bak
+*.db
+*.sqlite3
+
+# PDF Storage
+backend/storage/*.pdf
+!backend/storage/.gitkeep
+
+# Node & Frontend
+node_modules/
+frontend-clean/node_modules/
+frontend-clean/dist/
+frontend-clean/.output/
+frontend-clean/.nitro/
+frontend-clean/.tanstack/
+frontend-clean/.vercel/
+frontend-clean/.wrangler/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Preserve old nested Git metadata outside the new repository
+frontend-clean/.git-old-backup/
+
+# Exclude local application data
+backend/storage/**
+!backend/storage/.gitkeep
+
+# Archived backend implementations — not for deployment
+backend/_backup_nested_ai/
+backend/_legacy_nested_do_not_run/
+
+# Internal debugging report — review separately before publishing
+backend/GEMINI_DEBUG_REPORT.md
